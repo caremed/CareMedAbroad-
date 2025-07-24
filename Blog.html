@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareMedAbroad Blog – MBBS Abroad Guidance</title>
+  <meta name="description" content="Explore expert blog posts on MBBS abroad, cost breakdowns, university tips, and more by CareMedAbroad.">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #scrollTopBtn:hover {
+      background-color: #002f5f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CareMedAbroad Blog</h1>
+    <p>Expert guidance and updates for MBBS aspirants abroad</p>
+  </header>
+
+  <main>
+    <section class="blog-list">
+      <article>
+        <h2><a href="/blog-mbbs-kazakhstan.html">Top Reasons to Study MBBS in Kazakhstan</a></h2>
+        <p>Discover why Kazakhstan is becoming a preferred choice for Indian medical aspirants.</p>
+      </article>
+
+      <article>
+        <h2><a href="/blog-choose-university.html">How to Choose the Right Medical University Abroad</a></h2>
+        <p>Step-by-step guidance on what factors matter most when selecting an MBBS university.</p>
+      </article>
+
+      <article>
+        <h2><a href="/blog-cost-comparison.html">Cost Breakdown: MBBS Abroad vs India</a></h2>
+        <p>Compare tuition, living expenses, and hidden fees between Indian and Kazakh medical colleges.</p>
+      </article>
+    </section>
+
+    <a href="/index.html">← Back to Home</a>
+  </main>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑ Top</button>
+
+  <footer>
+    <p>&copy; 2025 CareMedAbroad</p>
+  </footer>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollTopBtn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+    };
+    function scrollToTop() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>
