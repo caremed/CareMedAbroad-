@@ -67,3 +67,10 @@ form button {
 form button:hover {
   background: #0066cc;
 }
+section.payment ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+section.payment li {
+  margin-bottom: 8px;
+}
