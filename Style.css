@@ -1,168 +1,77 @@
-/* ===== General Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Almaty_panorama.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #222;
-  line-height: 1.6;
 }
 
-/* ===== Header ===== */
-header {
-  background: linear-gradient(135deg, #00416A, #0074B7);
-  color: white;
-  padding: 25px 15px;
+header, nav, footer {
+  background: rgba(0, 65, 106, 0.9);
+  color: #fff;
   text-align: center;
-  animation: fadeInDown 1s ease;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-
-header p {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* ===== Navigation ===== */
-nav {
-  background: #003459;
-  text-align: center;
-  padding: 12px;
+  padding: 15px;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
+  font-weight: bold;
 }
 
-nav a:hover {
-  color: #ffd700;
-}
-
-/* ===== Sections ===== */
 section {
-  padding: 25px 15px;
-  background: white;
-  margin: 15px auto;
-  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  animation: fadeIn 1s ease;
 }
 
-h2 {
-  color: #00416A;
-  margin-bottom: 15px;
-}
-
-h3 {
-  margin-top: 15px;
-  color: #0074B7;
-}
-
-/* ===== Tables ===== */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-th {
-  background: #00416A;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background: #f2f2f2;
-}
-
-/* ===== Forms ===== */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-input, button {
-  padding: 10px;
-  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background: #00416A;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #0074B7;
-}
-
-/* ===== Footer ===== */
-footer {
-  background: #00416A;
-  color: white;
+  padding: 10px;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
 }
 
-/* ===== WhatsApp Floating Button ===== */
-.whatsapp-float {
+.inquiry-form input, .inquiry-form textarea, .inquiry-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.inquiry-form button {
+  background: #00416A;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.float-buttons {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
 }
 
-.whatsapp-float img {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s;
+.float-buttons a {
+  display: block;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
-.whatsapp-float img:hover {
-  transform: scale(1.1);
-}
-
-/* ===== Animations ===== */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  nav a {
-    display: inline-block;
-    margin: 5px 8px;
-  }
-
-  table, th, td {
-    font-size: 0.9rem;
-  }
+.float-buttons a.email-btn {
+  background: #0072c6;
 }
