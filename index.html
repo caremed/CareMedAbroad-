@@ -1,168 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CareMedAbroad – Your trusted MBBS abroad consultant in Kazakhstan. Comprehensive guide, university comparison, counseling, and support." />
-  <meta name="keywords" content="MBBS abroad, Kazakhstan MBBS, Almaty medical colleges, Caspian ISM, study medicine abroad" />
-  <title>CareMedAbroad – MBBS in Kazakhstan</title>
-  <link rel="icon" href="data:image/png;base64,PUT_YOUR_BASE64_LOGO_HERE" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareMedAbroad - Your Trusted MBBS Abroad Consultant for Kazakhstan. Compare universities, apply online and get expert guidance." />
+  <meta name="google-site-verification" content="dBHy_8xgPBqZVSbOt-i6mwrh3FRrQaAXStu5LKrGDhI" />
+  <title>CareMedAbroad – MBBS Abroad Consultant | Kazakhstan</title>
+  <link rel="icon" href="https://i.ibb.co/DKjQFXB/medical-favicon.png" type="image/png">
+
+  <!-- Stylish font and basic CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0; padding: 0;
       font-family: 'Poppins', sans-serif;
-      color: #202020;
-      background: url('data:image/jpeg;base64,INSERT_YOUR_BASE64_ALMATY_BACKGROUND_HERE') no-repeat center center fixed;
+      margin: 0;
+      background: url('https://i.ibb.co/hR7g3Vq/almaty-bg.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #222;
       line-height: 1.6;
+      padding-bottom: 100px;
     }
     header {
-      text-align: center; padding: 20px;
-      background: rgba(255,255,255,0.85);
+      background: rgba(0, 65, 106, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
-    header .logo-title {
-      display: inline-flex; align-items: center;
-      gap: 10px;
+    header img {
+      max-height: 60px;
+      margin-bottom: 10px;
     }
-    header .logo-title img {
-      height: 60px;
+    nav {
+      background: #003459;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
     }
-    header nav {
-      margin-top: 15px;
-    }
-    header nav a {
-      margin: 0 10px; text-decoration: none;
-      color: #004080; font-weight: 600;
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
     }
     section {
-      background: rgba(255,255,255,0.9);
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 1000px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      margin: 20px;
+      border-radius: 10px;
     }
-    h2 { color: #004080; }
-    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-    th, td { border: 1px solid #aaa; padding: 10px; text-align: center; }
-    .inquiry-form input, .inquiry-form textarea, .inquiry-form button {
-      width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
     }
-    .inquiry-form button {
-      background: #004080; color: #fff; border: none; cursor: pointer;
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-      gap: 10px;
+    th {
+      background: #f2f2f2;
     }
-    .gallery img {
-      width: 100%; height: 150px;
-      object-fit: cover; border-radius: 5px;
-      transition: transform .3s ease;
+    footer {
+      background: #002f4b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
     }
-    .gallery img:hover { transform: scale(1.05); }
-    .float-btn {
-      position: fixed; bottom: 20px; right: 20px;
-      display: flex; flex-direction: column; gap: 10px;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
     }
-    .float-btn a {
-      background: #25D366; color: #fff;
-      width: 50px; height: 50px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 50%; text-decoration: none;
-      font-size: 24px;
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
-    .float-btn a.email { background: #0072c6; }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button.email {
+      background-color: #007bff;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo-title">
-    <img src="data:image/png;base64,PUT_YOUR_BASE64_LOGO_HERE" alt="CareMedAbroad Logo">
-    <div>
-      <h1>CareMedAbroad</h1>
-      <p>Your Trusted MBBS Abroad Consultant</p>
-    </div>
-  </div>
-  <nav>
-    <a href="#whyus">Why Us</a><a href="#compare">Compare</a><a href="#blog">Blog</a><a href="#gallery">Gallery</a><a href="#inquiry">Inquiry</a><a href="#policy">Policies</a>
-  </nav>
+  <img src="https://i.ibb.co/hVXxK7k/caremedabroad-logo.png" alt="CareMedAbroad Logo" />
+  <h1>CareMedAbroad</h1>
+  <p>Your Trusted MBBS Abroad Consultant</p>
 </header>
 
-<section id="whyus">
+<nav>
+  <a href="#why">Why Us</a>
+  <a href="#compare">Compare</a>
+  <a href="#blog">Blog</a>
+  <a href="#form">Inquiry</a>
+  <a href="#payment">Online Inquiry</a>
+</nav>
+
+<section id="why">
   <h2>Why Choose CareMedAbroad?</h2>
   <ul>
-    <li>100% Admission Assistance & Post-arrival Support</li>
-    <li>WHO-approved, English-medium Universities</li>
-    <li>Transparent Fees, Modern Campus, Indian Mess Options</li>
-    <li>Direct Counseling via WhatsApp</li>
+    <li>Direct Admission in Top Kazakhstan Medical Colleges</li>
+    <li>Affordable Fees with Indian Mess & Hostel</li>
+    <li>Support for Visa, Tickets, Insurance, and FMGE</li>
+    <li>Offices in Jaipur and Sikar – Meet Our Experts</li>
   </ul>
 </section>
 
 <section id="compare">
-  <h2>Medical Universities in Almaty – Comparison</h2>
+  <h2>Top Medical Universities in Almaty – Comparison</h2>
   <table>
-    <tr><th>University</th><th>Tuition/year</th><th>Hostel/year</th><th>Medium</th><th>WHO</th></tr>
-    <tr><td>Kazakh National Medical University</td><td>$5,500</td><td>$800</td><td>English</td><td>Yes</td></tr>
-    <tr><td>Asfendiyarov Medical University</td><td>$5,200</td><td>$750</td><td>English</td><td>Yes</td></tr>
-    <tr style="background:#e6f7ff; font-weight:bold;"><td>Caspian International School of Medicine</td><td>$4,500</td><td>$700</td><td>English</td><td>Yes</td></tr>
+    <tr>
+      <th>University</th>
+      <th>Tuition (USD/year)</th>
+      <th>WHO Approved</th>
+      <th>Medium</th>
+    </tr>
+    <tr><td>Al-Farabi Kazakh National University</td><td>$5,200</td><td>Yes</td><td>English</td></tr>
+    <tr><td>Kazakh Medical University of Continuing Education</td><td>$4,800</td><td>Yes</td><td>English</td></tr>
+    <tr style="font-weight:bold; background:#e6f7ff;">
+      <td>Caspian ISM</td><td>$4,500</td><td>Yes</td><td>English</td>
+    </tr>
   </table>
-  <p style="font-style:italic;">CISM offers excellent value, modern facilities, and cost-effectiveness.</p>
+  <p>✔ Caspian ISM offers best value with English medium, Indian food & excellent FMGE support.</p>
 </section>
 
 <section id="blog">
-  <h2>Latest from Our Blog</h2>
-  <article><h3>MBBS in Kazakhstan – Full Guide</h3><p>From visa to hostel, fee structure to educational standards—get a comprehensive overview.</p></article>
-  <article><h3>Student Life in Almaty</h3><p>Experience modern amenities, Indian food options, and a vibrant student life in Almaty.</p></article>
-  <article><h3>Admission Roadmap</h3><p>Step-wise admission process, ideal for NEET-qualified students and parents alike.</p></article>
-  <article><h3>Cost of Living Breakdown</h3><p>How to manage monthly budget, food, travel, and leisure within $300-$400 in Almaty.</p></article>
+  <h2>Blog: Is MBBS Abroad Safe for Indian Students?</h2>
+  <p>Yes! Countries like Kazakhstan offer NMC/WHO-approved universities, English-medium courses, Indian mess & hostel, and a safe student environment. Caspian ISM in Almaty is highly rated for Indian students.</p>
 </section>
 
-<section id="gallery">
-  <h2>Explore Almaty & Campus Life</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/400x300?text=Almaty+City" alt="Almaty City View">
-    <img src="https://via.placeholder.com/400x300?text=University+Campus" alt="University Campus">
-    <img src="https://via.placeholder.com/400x300?text=Hostel+Room" alt="Hostel Room">
-    <img src="https://via.placeholder.com/400x300?text=Student+Life" alt="Student Life">
-    <img src="https://via.placeholder.com/400x300?text=Medical+Lab" alt="Medical Lab">
-    <img src="https://via.placeholder.com/400x300?text=Mountains" alt="Almaty Mountains">
-  </div>
-</section>
-
-<section id="inquiry">
-  <h2>Submit Your Inquiry</h2>
-  <form class="inquiry-form" action="mailto:caremedabroad@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="Your Questions"></textarea>
-    <button type="submit">Send Free Inquiry</button>
+<section id="form">
+  <h2>Free Inquiry Form</h2>
+  <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Full Name" required style="width:100%;padding:10px;margin:10px 0;">
+    <input type="email" name="email" placeholder="Email Address" required style="width:100%;padding:10px;margin:10px 0;">
+    <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:10px;margin:10px 0;">
+    <textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:10px 0;"></textarea>
+    <button type="submit" class="button">Submit Inquiry</button>
   </form>
-  <h3>Paid Inquiry – Just ₹49</h3>
-  <p>Get priority counseling, seat reservation, refund policy—all for ₹49.</p>
+</section>
+
+<section id="payment">
+  <h2>Online Admission Inquiry Form (₹49)</h2>
+  <p>This is a paid admission inquiry form for serious students. Benefits:</p>
+  <ul>
+    <li>Priority Response within 1–2 hours</li>
+    <li>Free Counseling and Admission Roadmap</li>
+    <li>Refund if you don’t take admission</li>
+  </ul>
   <form>
-    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async></script>
+    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+      data-payment_button_id="pl_QzDcv3FC7HH95r"
+      async> </script>
   </form>
 </section>
 
 <section id="policy">
-  <h2>Policies</h2>
-  <h3>Privacy Policy</h3>
-  <p>We collect basic contact details only, purely for counseling and support. No misuse, no spam—data deletion on request.</p>
-  <h3>Refund Policy</h3>
-  <p>If you choose not to take admission after inquiry, we offer a 50% refund on paid inquiry fees within 30 days.</p>
+  <h2>Privacy Policy</h2>
+  <p>Your personal details are never shared with any third-party. We collect only necessary data to assist in your MBBS admission process.</p>
+
+  <h2>Refund Policy</h2>
+  <p>Inquiry fee (₹49) is fully refundable if you don't proceed with admission. Refunds are processed within 5 business days via Razorpay.</p>
 </section>
 
 <footer>
-  <p>© 2025 CareMedAbroad • <a href="mailto:caremedabroad@gmail.com">caremedabroad@gmail.com</a></p>
+  <h3>Explore</h3>
+  <ul style="list-style: none; padding-left: 0;">
+    <li>• MBBS in Kazakhstan</li>
+    <li>• Caspian ISM Overview</li>
+    <li>• Cost of Living in Almaty</li>
+    <li>• MBBS Abroad vs BDS Abroad</li>
+    <li>• Visa, Ticket & Insurance Help</li>
+  </ul>
+  <p>Contact us: caremedabroad@gmail.com | Jaipur & Sikar Office</p>
+  <p>&copy; 2025 CareMedAbroad. All Rights Reserved.</p>
 </footer>
 
-<div class="float-btn">
-  <a href="https://wa.me/918503996560" target="_blank">💬</a>
-  <a href="mailto:caremedabroad@gmail.com" class="email">✉️</a>
+<!-- WhatsApp Button -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/918503996560" target="_blank">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+  </a>
 </div>
 
 </body>
