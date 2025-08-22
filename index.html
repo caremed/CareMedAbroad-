@@ -1,143 +1,55 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8496944187819395"
-     crossorigin="anonymous"></script>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CareMedAbroad - Trusted MBBS Abroad Consultant, helping you choose the right medical university in Kazakhstan." />
-  <meta name="google-site-verification" content="your-google-verification-code" />
-  <title>CareMedAbroad</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f8ff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #00416A;
-      color: white;
-      padding: 40px;
-      text-align: center;
-      animation: fadeIn 2s;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    nav {
-      background-color: #003459;
-      text-align: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    section {
-      padding: 20px;
-    }
-    .blog, .comparison {
-      margin-top: 40px;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-      border-radius: 5px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #007bff;
-      color: white;
-    }
-    td {
-      background-color: #f9f9f9;
-    }
-    h2 {
-      font-size: 1.8em;
-      color: #003459;
-    }
-    footer {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    /* Animations */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    /* WhatsApp Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
-    }
-  </style>
+  <meta name="description" content="CareMedAbroad - Trusted MBBS Abroad Consultant in Kazakhstan. Admission, hostel, visa, counseling & FMGE support." />
+  <title>CareMedAbroad - MBBS Abroad Consultant</title>
+  <link rel="icon" href="https://img.icons8.com/color/96/graduation-cap.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>CareMedAbroad</h1>
-    <p>Your Trusted MBBS Abroad Consultant</p>
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>CareMedAbroad</h1>
+      <p>Your Trusted MBBS Abroad Consultant</p>
+      <a href="#form" class="btn">Free Inquiry</a>
+      <a href="#payment" class="btn btn-secondary">Paid Inquiry ₹49</a>
+    </div>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="#why">Why Us</a>
-    <a href="#comparison">Compare Universities</a>
+    <a href="#comparison">Universities</a>
     <a href="#blog">Blog</a>
-    <a href="#form">Free Inquiry</a>
-    <a href="#payment">Pay Inquiry</a>
+    <a href="#form">Inquiry</a>
+    <a href="#policy">Policies</a>
   </nav>
 
-  <section id="why">
+  <!-- WHY US -->
+  <section id="why" class="section">
     <h2>Why Choose CareMedAbroad?</h2>
     <ul>
-      <li>100% Admission Assistance</li>
-      <li>Trusted Universities in Kazakhstan</li>
-      <li>Post-admission & Hostel Support</li>
-      <li>Direct Counseling via WhatsApp</li>
+      <li>✅ 100% Admission Assistance</li>
+      <li>✅ Trusted Universities in Kazakhstan</li>
+      <li>✅ Hostel, Visa & Post-admission Support</li>
+      <li>✅ Direct Counseling via WhatsApp</li>
+      <li>✅ FMGE / NEXT Preparation Guidance</li>
     </ul>
   </section>
 
-  <section id="comparison" class="comparison">
+  <!-- COMPARISON -->
+  <section id="comparison" class="section bg-light">
     <h2>Top Medical Universities in Almaty – Comparison</h2>
     <table>
       <tr>
         <th>University</th>
-        <th>Tuition Fee/year (USD)</th>
-        <th>Hostel/year (USD)</th>
+        <th>Tuition Fee/year</th>
+        <th>Hostel Fee/year</th>
         <th>Medium</th>
         <th>WHO Approved</th>
       </tr>
@@ -155,7 +67,7 @@
         <td>English</td>
         <td>Yes</td>
       </tr>
-      <tr style="font-weight:bold; background-color:#e6f7ff;">
+      <tr class="highlight">
         <td>Caspian International School of Medicine</td>
         <td>$4,500</td>
         <td>$700</td>
@@ -163,149 +75,73 @@
         <td>Yes</td>
       </tr>
     </table>
-    <p style="margin-top:10px;">✔️ Caspian ISM offers the best value with English-medium education, Indian food, and excellent facilities.</p>
   </section>
 
-  <section id="blog" class="blog">
-    <h2>Blog: Why Study MBBS in Kazakhstan?</h2>
-    <p>Discover the benefits of studying MBBS in Kazakhstan. With affordable fees, a high FMGE pass rate, and internationally recognized degrees, Kazakhstan has become one of the most sought-after destinations for medical education.</p>
+  <!-- BLOGS -->
+  <section id="blog" class="section">
+    <h2>Latest Blogs</h2>
+    <article>
+      <h3>1. Why Study MBBS in Kazakhstan?</h3>
+      <p>Kazakhstan has become one of the most sought-after destinations for Indian MBBS aspirants. With WHO and NMC recognition, affordable fees, and English-medium courses, it offers students a chance to pursue medicine without the high costs of countries like USA or UK. The universities provide clinical exposure, modern labs, and FMGE/NEXT exam preparation, making them ideal for Indian students planning to return home for practice.</p>
+    </article>
+    <article>
+      <h3>2. Caspian ISM – Best Value in Almaty</h3>
+      <p>Caspian International School of Medicine provides excellent infrastructure, low tuition fees, and student-friendly hostels with Indian food facilities. With a tuition of only $4,500/year and hostel fee around $700/year, Caspian ISM balances quality with affordability. Its strategic location in Almaty also makes it attractive for international students who want a safe and culturally vibrant city.</p>
+    </article>
+    <article>
+      <h3>3. Life in Almaty as a Student</h3>
+      <p>Almaty is known for its safety, clean environment, and affordable lifestyle. Students enjoy an international community, easy transport, and opportunities to explore cultural diversity. Winters are snowy but pleasant, while summers are mild, making it suitable for Indian students. The city offers recreational activities, sports, and student-friendly cafes to balance studies with relaxation.</p>
+    </article>
+    <article>
+      <h3>4. Step-by-Step Admission Process</h3>
+      <p>The MBBS admission process in Kazakhstan is simple and transparent. Students with NEET qualification and valid 12th-grade marks can apply. Once the application is submitted, an invitation letter is issued by the university. After that, visa processing begins. Our team at CareMedAbroad ensures smooth guidance throughout the journey, from documentation to travel and settling in Kazakhstan.</p>
+    </article>
+    <article>
+      <h3>5. FMGE & NEXT Preparation Abroad</h3>
+      <p>One of the key challenges for Indian students is clearing FMGE/NEXT after completing MBBS abroad. Many Kazakhstan universities collaborate with Indian faculty to provide weekend online classes, question banks, and mock tests. Caspian ISM particularly ensures its Indian students are equipped with the right resources to confidently clear licensing exams.</p>
+    </article>
   </section>
-<section id="blog" class="blog">
-  <h2>Blog: Why Study MBBS in Kazakhstan?</h2>
-  <p>Studying MBBS in Kazakhstan is becoming increasingly popular among students from all over the world. This is due to the high-quality medical education provided by the top universities, affordable tuition fees, and the opportunity to live in a culturally rich and diverse country. Kazakhstan's medical universities are recognized by WHO and the Medical Council of India (MCI), which ensures that students receive globally accepted degrees.</p>
-  <p>The universities in Kazakhstan provide modern infrastructure, advanced learning methods, and a great mix of theoretical and practical knowledge. The curriculum is in English, and Indian students can enjoy a seamless educational experience without language barriers. Moreover, Kazakhstan is known for its high FMGE pass rates, which is an essential factor for students intending to practice medicine in India after their studies.</p>
-  
-  <p>One of the top institutions in Kazakhstan is Caspian International School of Medicine (CISM) in Almaty. CISM provides excellent medical education with a focus on international standards, modern facilities, and dedicated faculty. The overall cost of studying in Kazakhstan is significantly lower than in many Western countries or private institutions in India. For instance, the annual tuition fee for CISM is about $4,500, with hostel and mess facilities available at affordable rates.</p>
-  
-  <p>In addition to quality education, students in Kazakhstan can enjoy a vibrant and welcoming environment. The universities in Kazakhstan have a strong focus on student support, offering career counseling, post-admission support, and cultural integration. The cost of living is also relatively low, which makes it a budget-friendly destination for international students.</p>
 
-  <h3>Advantages of Studying MBBS in Kazakhstan:</h3>
-  <ul>
-    <li>Affordable tuition fees compared to Western countries and private institutions in India.</li>
-    <li>Globally recognized degree with WHO and MCI approval.</li>
-    <li>English-medium courses with a diverse student population.</li>
-    <li>Good FMGE pass rates, allowing students to return and practice in India.</li>
-    <li>Post-admission support, including hostel, mess, and cultural integration.</li>
-  </ul>
-</section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8496944187819395"
-     crossorigin="anonymous"></script>
-<section id="blog-2" class="blog">
-  <h2>Blog: The Advantages of Studying MBBS Abroad</h2>
-  <p>Choosing to pursue MBBS abroad offers many advantages to students. More and more students are opting to study MBBS in countries like Kazakhstan, Russia, and Ukraine due to the growing number of medical colleges offering globally recognized degrees at affordable fees. Here, we’ll discuss why studying MBBS abroad is a great decision for Indian students.</p>
-  
-  <p>One of the main reasons students choose to study abroad is the lower cost of education. Medical education in India, especially in private colleges, can be very expensive. In contrast, countries like Kazakhstan offer quality medical education at a fraction of the cost. The tuition fees in Kazakhstan range from $4,000 to $5,000 per year, which is considerably lower than the cost of MBBS in India or Western countries.</p>
-  
-  <p>Another significant advantage is the availability of high-quality education. Many of the universities offering MBBS abroad follow a curriculum that is on par with international standards. These universities are recognized by WHO and MCI, ensuring that graduates can return to India and practice medicine without any issues. Additionally, these universities often have partnerships with hospitals, providing students with valuable practical experience.</p>
-  
-  <p>Students who choose to study MBBS abroad also have the opportunity to explore a new country and culture. Countries like Kazakhstan are not only known for their excellent education system but also for their rich history and vibrant culture. Students get to experience a multicultural environment that broadens their horizons and helps them develop personally and professionally.</p>
-  
-  <h3>Key Advantages of Studying MBBS Abroad:</h3>
-  <ul>
-    <li>Affordable tuition fees and living expenses compared to India and Western countries.</li>
-    <li>Access to world-class medical education recognized globally.</li>
-    <li>High FMGE success rates for Indian students.</li>
-    <li>Cultural diversity and an enriching international experience.</li>
-    <li>Internationally recognized medical degree that opens global career opportunities.</li>
-  </ul>
-  <p>Choosing the right country and university for your MBBS studies is crucial. By considering factors like tuition fees, quality of education, and post-graduation opportunities, students can make an informed decision that will set them up for a successful career in medicine.</p>
-</section>
-  <section id="form">
+  <!-- FORMS -->
+  <section id="form" class="section bg-light">
     <h2>Free Student Inquiry Form</h2>
-    <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST" style="max-width:500px; margin:auto;">
-      <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="number" name="neet" placeholder="NEET Score" required style="width:100%; padding:10px; margin:5px 0;" />
-      <button type="submit" style="width:100%; padding:10px; background:#007bff; color:white; border:none; border-radius:5px;">Submit Inquiry</button>
+    <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST" class="form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="number" name="neet" placeholder="NEET Score" required />
+      <button type="submit">Submit Inquiry</button>
     </form>
   </section>
-  <section id="payment">
-    <h2>Online Admission Inquiry Form (₹49)</h2>
-    <p>Submit the online inquiry form by paying ₹49. Get exclusive counseling and admission assistance.</p>
+
+  <section id="payment" class="section">
+    <h2>Paid Inquiry Form (₹49)</h2>
+    <p>For priority counseling, submit your paid inquiry.</p>
     <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async> </script>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async></script>
     </form>
   </section>
+
+  <!-- POLICIES -->
+  <section id="policy" class="section bg-light">
+    <h2>Privacy Policy & Refund Policy</h2>
+    <p><b>Privacy Policy:</b> We respect your privacy. All student information shared with CareMedAbroad is kept confidential and used only for admission purposes.</p>
+    <p><b>Refund Policy:</b> Paid inquiry fees are non-refundable as they cover counseling services. In case of technical issues, refunds may be considered on a case-by-case basis.</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 CareMedAbroad | All rights reserved</p>
+    <p>© 2025 CareMedAbroad | All Rights Reserved</p>
   </footer>
-  <!-- WhatsApp Button -->
-  <div class="whatsapp-float">
+
+  <!-- FLOATING BUTTONS -->
+  <div class="float-btns">
     <a href="https://wa.me/8503996560" target="_blank">
-      <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp" />
+      <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+    <a href="mailto:caremedabroad@gmail.com">
+      <img src="https://img.icons8.com/color/96/gmail--v1.png" alt="Email" />
     </a>
   </div>
-</body><form>
-  <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async> </script>
-</form>
-  <section id="privacy" class="blog">
-  <h2>Privacy Policy</h2>
-  <p>
-    At CareMedAbroad, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information.
-  </p>
-  <h3>Information We Collect</h3>
-  <ul>
-    <li>Personal details such as your name, email address, and phone number submitted via inquiry forms.</li>
-    <li>Academic details like NEET scores and qualification documents when you apply for admission assistance.</li>
-    <li>Technical data such as IP address and browser information for analytics and site improvements.</li>
-  </ul>
-  <h3>How We Use Your Information</h3>
-  <ul>
-    <li>To respond to your inquiries and provide admission guidance.</li>
-    <li>To process your applications and related payments.</li>
-    <li>To improve our website and user experience.</li>
-  </ul>
-  <h3>Data Protection</h3>
-  <p>
-    We implement industry-standard security measures to protect your personal data from unauthorized access. We never sell or rent your personal information to third parties.
-  </p>
-  <h3>Third-Party Services</h3>
-  <p>
-    We may use third-party services such as payment gateways (Razorpay) and form submission services. These providers have their own privacy policies, and we recommend reviewing them.
-  </p>
-  <h3>Cookies</h3>
-  <p>
-    Our site may use cookies to enhance your browsing experience. You can choose to disable cookies through your browser settings.
-  </p>
-  <h3>Contact Us</h3>
-  <p>
-    If you have any questions about our Privacy Policy, you can contact us at 
-    <a href="mailto:caremedabroad@gmail.com">caremedabroad@gmail.com</a>.
-  </p>
-</section>
-
-<section id="refund" class="blog">
-  <h2>Refund Policy</h2>
-  <p>
-    We strive to provide the best admission guidance and services. However, due to the nature of our consultation and processing work, all payments made for inquiry forms, application processing, or counseling services are generally non-refundable.
-  </p>
-  <h3>Refund Eligibility</h3>
-  <ul>
-    <li>If you have been charged twice for the same transaction due to a technical error, we will initiate a refund for the duplicate payment.</li>
-    <li>Refund requests must be submitted within 7 days of payment.</li>
-    <li>No refunds will be issued once the application process with the university has started.</li>
-  </ul>
-  <h3>How to Request a Refund</h3>
-  <p>
-    Email us at <a href="mailto:caremedabroad@gmail.com">caremedabroad@gmail.com</a> with your payment receipt and reason for refund. Refunds will be processed to the original payment method within 7–10 business days.
-  </p>
-</section>
-
-<section id="terms" class="blog">
-  <h2>Terms & Conditions</h2>
-  <p>
-    By using our website and services, you agree to the following terms and conditions:
-  </p>
-  <ul>
-    <li>You are responsible for providing accurate and truthful information during the inquiry and application process.</li>
-    <li>We act as an educational consultant and are not responsible for changes in university admission policies or government regulations.</li>
-    <li>Service fees paid are for consultation and guidance and do not guarantee admission unless eligibility criteria are met.</li>
-    <li>We reserve the right to modify our services, pricing, and policies without prior notice.</li>
-    <li>All content on this website is the intellectual property of CareMedAbroad and may not be copied or reproduced without permission.</li>
-  </ul>
-  <p>
-    For any questions, please contact us at <a href="mailto:caremedabroad@gmail.com">caremedabroad@gmail.com</a>.
-  </p>
-</section>
+</body>
 </html>
