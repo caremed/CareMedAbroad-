@@ -1,77 +1,150 @@
+/* Global Style */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Almaty_panorama.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #222;
+  padding: 0;
+  background: #f9fbfd;
+  color: #333;
+  line-height: 1.6;
 }
 
-header, nav, footer {
-  background: rgba(0, 65, 106, 0.9);
-  color: #fff;
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1549921296-3cce903855cd') center/cover no-repeat;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 15px;
+}
+.hero .overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  animation: fadeInDown 1.5s;
+}
+.hero-text p {
+  font-size: 1.3em;
+  margin: 10px 0 20px;
+}
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn-secondary {
+  background: #28a745;
 }
 
+/* Nav */
+nav {
+  background: #003459;
+  text-align: center;
+  padding: 12px;
+}
 nav a {
-  color: #fff;
+  color: white;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
-section {
-  background: rgba(255, 255, 255, 0.9);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 8px;
+/* Sections */
+.section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.bg-light {
+  background: #eef6fb;
+  border-radius: 10px;
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
-
 th, td {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
 }
-
-.inquiry-form input, .inquiry-form textarea, .inquiry-form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
+th {
+  background: #007bff;
+  color: white;
+}
+.highlight {
+  background: #dff6ff;
+  font-weight: bold;
 }
 
-.inquiry-form button {
-  background: #00416A;
+/* Forms */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background: #007bff;
   color: white;
-  border: none;
+  font-weight: bold;
   cursor: pointer;
 }
+form button:hover {
+  background: #0056b3;
+}
 
-.float-buttons {
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Floating Buttons */
+.float-btns {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.float-btns img {
+  width: 55px;
+  height: 55px;
 }
 
-.float-buttons a {
-  display: block;
-  margin-top: 10px;
-  width: 50px;
-  height: 50px;
-  background: #25d366;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-}
-
-.float-buttons a.email-btn {
-  background: #0072c6;
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px);}
+  to { opacity: 1; transform: translateY(0);}
 }
