@@ -1,50 +1,140 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-/* Your full CSS goes here */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9fbfd;
-  color: #333;
-  line-height: 1.6;
-}
-/* rest of style.css code */
-  </style>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CareMedAbroad - Trusted MBBS Abroad Consultant in Kazakhstan. Admission, hostel, visa, counseling & FMGE support." />
-  <title>CareMedAbroad - MBBS Abroad Consultant</title>
-  <link rel="icon" href="https://img.icons8.com/color/96/graduation-cap.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="CareMedAbroad - Trusted MBBS Abroad Consultant, helping you choose the right medical university in Kazakhstan." />
+  <title>CareMedAbroad</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9fbfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #00416A, #007bff);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #003459;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .blog, .comparison {
+      margin-top: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 2s;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #003459;
+    }
+    button, .btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover, .btn:hover {
+      background: #0056b3;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>CareMedAbroad</h1>
-      <p>Your Trusted MBBS Abroad Consultant</p>
-      <a href="#form" class="btn">Free Inquiry</a>
-      <a href="#payment" class="btn btn-secondary">Paid Inquiry ₹49</a>
-    </div>
+  <header>
+    <h1>CareMedAbroad</h1>
+    <p>Your Trusted MBBS Abroad Consultant</p>
   </header>
 
-  <!-- NAVIGATION -->
   <nav>
     <a href="#why">Why Us</a>
     <a href="#comparison">Universities</a>
     <a href="#blog">Blog</a>
-    <a href="#form">Inquiry</a>
+    <a href="#form">Free Inquiry</a>
+    <a href="#payment">Paid Inquiry</a>
     <a href="#policy">Policies</a>
   </nav>
 
-  <!-- WHY US -->
-  <section id="why" class="section">
+  <section id="why">
     <h2>Why Choose CareMedAbroad?</h2>
     <ul>
       <li>✅ 100% Admission Assistance</li>
@@ -55,14 +145,13 @@ body {
     </ul>
   </section>
 
-  <!-- COMPARISON -->
-  <section id="comparison" class="section bg-light">
+  <section id="comparison" class="comparison">
     <h2>Top Medical Universities in Almaty – Comparison</h2>
     <table>
       <tr>
         <th>University</th>
-        <th>Tuition Fee/year</th>
-        <th>Hostel Fee/year</th>
+        <th>Tuition Fee/year (USD)</th>
+        <th>Hostel/year (USD)</th>
         <th>Medium</th>
         <th>WHO Approved</th>
       </tr>
@@ -80,7 +169,7 @@ body {
         <td>English</td>
         <td>Yes</td>
       </tr>
-      <tr class="highlight">
+      <tr style="font-weight:bold; background-color:#e6f7ff;">
         <td>Caspian International School of Medicine</td>
         <td>$4,500</td>
         <td>$700</td>
@@ -90,70 +179,52 @@ body {
     </table>
   </section>
 
-  <!-- BLOGS -->
-  <section id="blog" class="section">
+  <section id="blog" class="blog">
     <h2>Latest Blogs</h2>
-    <article>
-      <h3>1. Why Study MBBS in Kazakhstan?</h3>
-      <p>Kazakhstan has become one of the most sought-after destinations for Indian MBBS aspirants. With WHO and NMC recognition, affordable fees, and English-medium courses, it offers students a chance to pursue medicine without the high costs of countries like USA or UK. The universities provide clinical exposure, modern labs, and FMGE/NEXT exam preparation, making them ideal for Indian students planning to return home for practice.</p>
-    </article>
-    <article>
-      <h3>2. Caspian ISM – Best Value in Almaty</h3>
-      <p>Caspian International School of Medicine provides excellent infrastructure, low tuition fees, and student-friendly hostels with Indian food facilities. With a tuition of only $4,500/year and hostel fee around $700/year, Caspian ISM balances quality with affordability. Its strategic location in Almaty also makes it attractive for international students who want a safe and culturally vibrant city.</p>
-    </article>
-    <article>
-      <h3>3. Life in Almaty as a Student</h3>
-      <p>Almaty is known for its safety, clean environment, and affordable lifestyle. Students enjoy an international community, easy transport, and opportunities to explore cultural diversity. Winters are snowy but pleasant, while summers are mild, making it suitable for Indian students. The city offers recreational activities, sports, and student-friendly cafes to balance studies with relaxation.</p>
-    </article>
-    <article>
-      <h3>4. Step-by-Step Admission Process</h3>
-      <p>The MBBS admission process in Kazakhstan is simple and transparent. Students with NEET qualification and valid 12th-grade marks can apply. Once the application is submitted, an invitation letter is issued by the university. After that, visa processing begins. Our team at CareMedAbroad ensures smooth guidance throughout the journey, from documentation to travel and settling in Kazakhstan.</p>
-    </article>
-    <article>
-      <h3>5. FMGE & NEXT Preparation Abroad</h3>
-      <p>One of the key challenges for Indian students is clearing FMGE/NEXT after completing MBBS abroad. Many Kazakhstan universities collaborate with Indian faculty to provide weekend online classes, question banks, and mock tests. Caspian ISM particularly ensures its Indian students are equipped with the right resources to confidently clear licensing exams.</p>
-    </article>
+    <h3>1. Why Study MBBS in Kazakhstan?</h3>
+    <p>Kazakhstan has become one of the most sought-after destinations for Indian MBBS aspirants...</p>
+    <h3>2. Caspian ISM – Best Value in Almaty</h3>
+    <p>Caspian ISM provides affordable tuition, Indian mess, English medium classes...</p>
+    <h3>3. Living in Almaty as a Student</h3>
+    <p>Almaty offers affordable living, cultural experiences, and a safe student-friendly environment...</p>
+    <h3>4. Step-by-Step Admission Process</h3>
+    <p>From NEET score submission to visa assistance, our counselors help you through every step...</p>
+    <h3>5. FMGE Preparation While Abroad</h3>
+    <p>Our partner universities offer FMGE coaching with Indian faculty and online classes...</p>
   </section>
 
-  <!-- FORMS -->
-  <section id="form" class="section bg-light">
+  <section id="form">
     <h2>Free Student Inquiry Form</h2>
-    <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST" class="form">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="number" name="neet" placeholder="NEET Score" required />
-      <button type="submit">Submit Inquiry</button>
+    <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST" style="max-width:500px; margin:auto;">
+      <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:5px 0;" />
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:10px; margin:5px 0;" />
+      <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; padding:10px; margin:5px 0;" />
+      <input type="number" name="neet" placeholder="NEET Score" required style="width:100%; padding:10px; margin:5px 0;" />
+      <button type="submit" class="btn">Submit Inquiry</button>
     </form>
   </section>
 
-  <section id="payment" class="section">
-    <h2>Paid Inquiry Form (₹49)</h2>
-    <p>For priority counseling, submit your paid inquiry.</p>
+  <section id="payment">
+    <h2>Paid Admission Inquiry Form (₹49)</h2>
+    <p>Get priority counseling and complete admission assistance.</p>
     <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async></script>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async> </script>
     </form>
   </section>
 
-  <!-- POLICIES -->
-  <section id="policy" class="section bg-light">
-    <h2>Privacy Policy & Refund Policy</h2>
-    <p><b>Privacy Policy:</b> We respect your privacy. All student information shared with CareMedAbroad is kept confidential and used only for admission purposes.</p>
-    <p><b>Refund Policy:</b> Paid inquiry fees are non-refundable as they cover counseling services. In case of technical issues, refunds may be considered on a case-by-case basis.</p>
+  <section id="policy" class="blog">
+    <h2>Privacy & Refund Policy</h2>
+    <p>Your privacy is important to us. CareMedAbroad ensures all student data is kept secure...</p>
+    <p>Refund Policy: Fees once paid for counseling are non-refundable, except in case of duplicate payment...</p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 CareMedAbroad | All Rights Reserved</p>
+    <p>&copy; 2025 CareMedAbroad | All rights reserved</p>
   </footer>
 
-  <!-- FLOATING BUTTONS -->
-  <div class="float-btns">
+  <div class="whatsapp-float">
     <a href="https://wa.me/8503996560" target="_blank">
-      <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp" />
-    </a>
-    <a href="mailto:caremedabroad@gmail.com">
-      <img src="https://img.icons8.com/color/96/gmail--v1.png" alt="Email" />
+      <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp" />
     </a>
   </div>
 </body>
