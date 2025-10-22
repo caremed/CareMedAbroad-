@@ -1,231 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CareMedAbroad - Trusted MBBS Abroad Consultant, helping you choose the right medical university in Kazakhstan." />
-  <title>CareMedAbroad</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f9fbfd;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #00416A, #007bff);
-      color: white;
-      padding: 40px;
-      text-align: center;
-      animation: fadeIn 2s;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    nav {
-      background-color: #003459;
-      text-align: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffeb3b;
-    }
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .blog, .comparison {
-      margin-top: 40px;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      animation: fadeIn 2s;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #007bff;
-      color: white;
-    }
-    td {
-      background-color: #f9f9f9;
-    }
-    h2 {
-      font-size: 1.8em;
-      color: #003459;
-    }
-    button, .btn {
-      display: inline-block;
-      background: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    button:hover, .btn:hover {
-      background: #0056b3;
-    }
-    footer {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS abroad with CareMedAbroad. Affordable options in Kazakhstan, admission guidance, FMGE prep, and paid consultations.">
+    <meta name="keywords" content="MBBS abroad, Kazakhstan, medical studies, NEET, FMGE, paid inquiry">
+    <title>CareMedAbroad - Study MBBS Abroad</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 600;
+            font-size: 3rem;
+        }
+        .blog-card {
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            font-weight: 600;
+        }
+        .adsense-placeholder {
+            background-color: #e9ecef;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>CareMedAbroad</h1>
-    <p>Your Trusted MBBS Abroad Consultant</p>
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">CareMedAbroad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#blogs">Latest Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paid-inquiry">Paid Inquiry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#policies">Policies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#why">Why Us</a>
-    <a href="#comparison">Universities</a>
-    <a href="#blog">Blog</a>
-    <a href="#form">Free Inquiry</a>
-    <a href="#payment">Paid Inquiry</a>
-    <a href="#policy">Policies</a>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to CareMedAbroad</h1>
+            <p class="lead">Your gateway to affordable MBBS studies abroad. Explore opportunities in Kazakhstan and beyond with expert guidance.</p>
+            <a href="#blogs" class="btn btn-light btn-lg">Explore Blogs</a>
+            <a href="#paid-inquiry" class="btn btn-outline-light btn-lg ms-2">Book Paid Consultation</a>
+        </div>
+    </section>
 
-  <section id="why">
-    <h2>Why Choose CareMedAbroad?</h2>
-    <ul>
-      <li>✅ 100% Admission Assistance</li>
-      <li>✅ Trusted Universities in Kazakhstan</li>
-      <li>✅ Hostel, Visa & Post-admission Support</li>
-      <li>✅ Direct Counseling via WhatsApp</li>
-      <li>✅ FMGE / NEXT Preparation Guidance</li>
-    </ul>
-  </section>
+    <!-- AdSense Placeholder (Replace with actual AdSense code after approval) -->
+    <div class="adsense-placeholder">
+        <p>Ad Space - Google AdSense Approved Site</p>
+        <!-- Insert AdSense code here, e.g., <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+    </div>
 
-  <section id="comparison" class="comparison">
-    <h2>Top Medical Universities in Almaty – Comparison</h2>
-    <table>
-      <tr>
-        <th>University</th>
-        <th>Tuition Fee/year (USD)</th>
-        <th>Hostel/year (USD)</th>
-        <th>Medium</th>
-        <th>WHO Approved</th>
-      </tr>
-      <tr>
-        <td>Al-Farabi Kazakh National University</td>
-        <td>$5,200</td>
-        <td>$800</td>
-        <td>English</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>Kazakh Medical University of Continuing Education</td>
-        <td>$4,800</td>
-        <td>$750</td>
-        <td>English</td>
-        <td>Yes</td>
-      </tr>
-      <tr style="font-weight:bold; background-color:#e6f7ff;">
-        <td>Caspian International School of Medicine</td>
-        <td>$4,500</td>
-        <td>$700</td>
-        <td>English</td>
-        <td>Yes</td>
-      </tr>
-    </table>
-  </section>
+    <!-- Latest Blogs Section (Expanded for AdSense) -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Blogs</h2>
+            <p class="text-center mb-4">Dive deep into MBBS abroad insights, from university rankings to student life. Our content is original and updated regularly to help you make informed decisions.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Kazakhstan+MBBS" class="card-img-top" alt="Kazakhstan MBBS">
+                        <div class="card-body">
+                            <h5 class="card-title">Why Study MBBS in Kazakhstan?</h5>
+                            <p class="card-text">Kazakhstan has become one of the most sought-after destinations for Indian MBBS aspirants due to its affordable fees, English-medium programs, and recognition by MCI. With universities like Kazakh National Medical University offering world-class facilities, it's a smart choice for NEET-qualified students.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Caspian+ISM" class="card-img-top" alt="Caspian ISM">
+                        <div class="card-body">
+                            <h5 class="card-title">Caspian ISM – Best Value in Almaty</h5>
+                            <p class="card-text">Caspian ISM provides affordable tuition starting at $4,000/year, Indian mess options, and English medium classes. Located in Almaty, it ensures a seamless transition for international students with dedicated support for FMGE preparation.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Living+in+Almaty" class="card-img-top" alt="Living in Almaty">
+                        <div class="card-body">
+                            <h5 class="card-title">Living in Almaty as a Student</h5>
+                            <p class="card-text">Almaty offers affordable living with hostels from $100/month, cultural experiences, and a safe environment. Explore local cuisine, parks, and student communities while focusing on your medical studies.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Admission+Process" class="card-img-top" alt="Admission Process">
+                        <div class="card-body">
+                            <h5 class="card-title">Step-by-Step Admission Process</h5>
+                            <p class="card-text">From NEET score submission to visa assistance, our counselors guide you through every step. Documents required include passport, certificates, and medical reports. We handle everything for a hassle-free experience.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <h5 class="card-title">FMGE Preparation While Abroad</h5>
+                        <p class="card-text">Our partner universities offer FMGE coaching with Indian faculty and online classes. With a pass rate above 70%, students get personalized study plans and mock tests to excel in the exam.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <!-- Additional Blog for AdSense Depth -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Career+Opportunities" class="card-img-top" alt="Career Opportunities">
+                        <div class="card-body">
+                            <h5 class="card-title">Career Opportunities After MBBS in Kazakhstan</h5>
+                            <p class="card-text">Graduates can practice in India after FMGE or pursue further studies globally. Many find jobs in hospitals or research, with opportunities in the growing healthcare sector.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="blog" class="blog">
-    <h2>Latest Blogs</h2>
-    <h3>1. Why Study MBBS in Kazakhstan?</h3>
-    <p>Kazakhstan has become one of the most sought-after destinations for Indian MBBS aspirants...</p>
-    <h3>2. Caspian ISM – Best Value in Almaty</h3>
-    <p>Caspian ISM provides affordable tuition, Indian mess, English medium classes...</p>
-    <h3>3. Living in Almaty as a Student</h3>
-    <p>Almaty offers affordable living, cultural experiences, and a safe student-friendly environment...</p>
-    <h3>4. Step-by-Step Admission Process</h3>
-    <p>From NEET score submission to visa assistance, our counselors help you through every step...</p>
-    <h3>5. FMGE Preparation While Abroad</h3>
-    <p>Our partner universities offer FMGE coaching with Indian faculty and online classes...</p>
-  </section>
+    <!-- Paid Inquiry Section -->
+    <section id="paid-inquiry" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Paid Inquiry Form</h2>
+            <p class="text-center mb-4">Get personalized MBBS consultation for $50. Includes detailed guidance on universities, visa, and FMGE prep. Secure payment via Stripe.</p>
+            <form id="inquiry-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Inquiry Details</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your MBBS goals..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg">Pay $50 & Submit</button>
+            </form>
+        </div>
+    </section>
 
-  <section id="form">
-    <h2>Free Student Inquiry Form</h2>
-    <form action="https://formsubmit.co/caremedabroad@gmail.com" method="POST" style="max-width:500px; margin:auto;">
-      <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; padding:10px; margin:5px 0;" />
-      <input type="number" name="neet" placeholder="NEET Score" required style="width:100%; padding:10px; margin:5px 0;" />
-      <button type="submit" class="btn">Submit Inquiry</button>
-    </form>
-  </section>
+    <!-- Policies Section (Expanded for AdSense) -->
+    <section id="policies" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Privacy & Refund Policy</h2>
+            <h3>Privacy Policy</h3>
+            <p>We collect personal information only for inquiries and consultations. Data is secured and not shared without consent. For full details, <a href="#">read our Privacy Policy</a>.</p>
+            <h3>Terms of Service</h3>
+            <p>By using our site, you agree to our terms. Services are educational; we do not guarantee admission. <a href="#">Read full Terms</a>.</p>
+            <h3>Refund Policy</h3>
+            <p>Fees once paid for counseling are non-refundable, except in case of duplicate payment or service failure. Refunds processed within 7 days.</p>
+        </div>
+    </section>
 
-  <section id="payment">
-    <h2>Paid Admission Inquiry Form (₹49)</h2>
-    <p>Get priority counseling and complete admission assistance.</p>
-    <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QzDcv3FC7HH95r" async> </script>
-    </form>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <p class="text-center mb-4">Email: info@caremedabroad.site | Phone: +1-123-456-7890 | Address: 123 Health St, Almaty, Kazakhstan</p>
+            <form>
+                <div class="mb-3">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="contact-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contact-email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea class="form-control" id="contact-message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
 
-  <section id="policy" class="blog">
-    <h2>Privacy & Refund Policy</h2>
-    <p>Your privacy is important to us. CareMedAbroad ensures all student data is kept secure...</p>
-    <p>Refund Policy: Fees once paid for counseling are non-refundable, except in case of duplicate payment...</p>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2023 CareMedAbroad. All rights reserved. | <a href="#policies" class="text-white">Privacy Policy</a> | <a href="#policies" class="text-white">Terms</a></p>
+        </div>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 CareMedAbroad | All rights reserved</p>
-  </footer>
-
-  <div class="whatsapp-float">
-    <a href="https://wa.me/8503996560" target="_blank">
-      <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp" />
-    </a>
-  </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Stripe JS for Paid Form -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        const stripe = Stripe('pk_test_XXXXXXXXXXXXXXXXXXXXXXXX'); // Replace with your Stripe publishable key
+        const form = document.getElementById('inquiry-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const response = await fetch('/create-checkout-session', { // Replace with your backend endpoint
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    message: document.getElementById('message').value
+                })
+            });
+            const session = await response.json();
+            const result = await stripe.redirectToCheckout({ sessionId: session.id });
+            if (result.error) alert(result.error.message);
+        });
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-</html>
+              </html>
